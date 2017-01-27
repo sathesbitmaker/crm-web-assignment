@@ -102,10 +102,9 @@ class Contact
 
   # This method should delete the contact
   # HINT: Check the Array class docs for built-in methods that might be useful here
-  def delete
-    @@contacts.delete(self)
+def delete
+    @@contacts.delete_if { |contact| contact.id == self.id }
   end
-
 end
 
 
