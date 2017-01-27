@@ -30,3 +30,16 @@ post "/contacts" do
   Contact.create(params[:first_name], params[:last_name], params[:email], params[:note])
   redirect to("/contacts")
 end
+
+get '/contacts/:id' do
+  @contact = Contact.find(params[:id].to_i)
+
+  puts "LOGGING OUT CONTACT"
+  # puts @contact.first_name
+
+  if @contact != nil
+    erb :show_contact
+  else
+    raise Sinatra::NotFound
+  end
+end

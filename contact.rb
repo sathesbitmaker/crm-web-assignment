@@ -12,6 +12,10 @@ class Contact
   @@contacts = []
   @@id = 1
 
+  # def self.find(id)
+  #   @@contacts.find { |contact| contact.id == id}
+  # end
+
 
 
   # This method should initialize the contact's attributes
@@ -47,10 +51,15 @@ class Contact
   # This method should accept an id as an argument
   # and return the contact who has that id
   def self.find(id)
+
+    puts "INSIDE self.find --> LOGGING OUT id: #{id}"
+
     @@contacts.each do |contact|
-    return contact if contact.id == id
+      return contact if contact.id == id
+    end
+
+    return nil
   end
-end
 
   # This method should allow you to specify
   # 1. which of the contact's attributes you want to update

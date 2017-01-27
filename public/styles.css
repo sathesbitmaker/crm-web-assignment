@@ -52,8 +52,8 @@
 .edde {
   font-size: 15px;
   color: blue;
-  margin-top: -0.004px;
-  text-decoration: underline;
+  margin-top: 0px;
+  /*text-decoration: underline;*/
 }
 
 .bitmaker {
