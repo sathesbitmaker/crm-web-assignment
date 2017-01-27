@@ -1,7 +1,35 @@
-<h1> Welcome to <%= @crm_app_name %>! </h1>
+<!-- <h1 class="first"> <%= @crm_app_name %>! </h1>
+
 <p>Main menu</p>
 <ul>
   <li><a href="/contacts">View all contacts</a></li>
   <li><a href="/contacts/new"> New Contact</a></li>
-  <!-- please complete me with links to other actions -->
+
 </ul>
+  <ul class = "three">
+    <li class = "threespec"><a href="/">Home</a></li>
+    <li class = "threespec"><a href="/contacts/new"> Add a Contact</a></li>
+    <li class = "threespec"> About </li>
+  </ul>
+
+  <h2 class = "five"> There are <%= Contact.all.count %> contacts </h2> -->
+<!--
+    <ul>
+
+    <% Contact.all.each do |contact| %>
+    <li class = "names"> <%= contact.first_name %> <%= contact.last_name %> (<%= contact.email %>) <br class ="link"> Edit | Delete </br> </li>
+    <% end %>
+
+    </ul> -->
+
+  <!-- <h3> Bitmaker 2016 </h3> -->
+  <ul>
+
+  <% Contact.all.each do |contact| %>
+  <li class = "names"> <%= contact.first_name %> <%= contact.last_name %> (<%= contact.email %>)
+    <p class = "edde"> Edit | Delete </p>
+  </li>
+
+  <% end %>
+
+  </ul>

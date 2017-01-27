@@ -1,0 +1,64 @@
+.first {
+  background-color: #3c3c2a;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: -10px;
+  width: 1250px;
+  margin-bottom: -15px;
+}
+
+.three {
+  width: 1266px;
+  margin-left: -38px;
+}
+
+.threespec {
+  text-align: center;
+  list-style-type: none;
+  color: white;
+  font-size: 25px;
+  margin-top: 1px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #e0e0d2;
+  font-weight: 900;
+}
+
+.five {
+  background-color: #ff8080;
+  padding: 15px 10px;
+  width: 1200px;
+  margin-left: 20px;
+}
+
+.names {
+  font-size: 25px;
+  font-weight: 900;
+  list-style-type: none;
+  padding: 10px 0px 4px 10px;
+  background-color: #1ac6ff;
+  color: black;
+  margin-top: 12px;
+  width: 1205px;
+  margin-left: -17px;
+}
+
+.three a {
+  color: white;
+  text-decoration: none;
+}
+
+.edde {
+  font-size: 15px;
+  color: blue;
+  margin-top: -0.004px;
+  text-decoration: underline;
+}
+
+.bitmaker {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+}

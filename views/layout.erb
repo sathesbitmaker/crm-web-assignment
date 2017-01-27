@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel="stylesheet" href="http://localhost:4567/styles.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 class="first"> <%= @crm_app_name %>! </h1>
+
+    <!--<p>Main menu</p>
+    <ul>
+      <li><a href="/contacts">View all contacts</a></li>
+      <li><a href="/contacts/new"> New Contact</a></li>
+
+    </ul>  -->
+      <ul class = "three">
+        <li class = "threespec"><a href="/">Home</a></li>
+        <li class = "threespec"><a href="/contacts/new"> Add a Contact</a></li>
+        <li class = "threespec"> About </li>
+      </ul>
+
+      <h2 class = "five"> There are <%= Contact.all.count %> contacts </h2>
+
+
+
+
+
+<%= yield %>
+  <h3 class = "bitmaker"> Bitmaker 2016 </h3>
+  </body>
+</html>
